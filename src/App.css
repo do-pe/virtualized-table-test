@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 6vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.t-left-cols,
+.t-middle-wrapper,
+.t-right-cols {
+  display: inline-block;
+}
+
+.t-middle-wrapper {
+  overflow: scroll;
+}
+
+
+.t-row {
+  border-bottom: 1px solid #ccc;
+}
+
+.t-cell {
+  border-left: 1px solid #ccc;
+  display: inline-block;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0.24rem;
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+}
+
+.t-header {
+  position: sticky;
+  top: 0px;
+  background: azure;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.t-footer {
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid;
+  background: azure;
+}
+
+.t-footer .t-middle-cols {
+  height: 1px;
+}
