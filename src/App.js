@@ -12,7 +12,7 @@ const middleWidth = 200;
 const middleInnerWidth = 600;
 const rightWidth = 150;
 
-const tlist = randomList(1000);
+const tlist = randomList(2000);
 const list = tlist.map(item => ({
   ...item,
   action: <button><span className="icon" role="img" aria-label="burger menu">🍔</span></button>,
@@ -175,6 +175,10 @@ class App extends Component {
           </div>
         </ScrollSync>
 
+        <h2>Some stuff under the table</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+        <p>Lorem ipsum dolor sit amet</p>
+        <p>Lorem ipsum dolor sit amet</p>
       </div>
     );
   }

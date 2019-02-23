@@ -1,3 +1,26 @@
+#### Einschränkungen
+
+- Spaltenbreiten sind noch nicht Responsive
+- Flackert im Firefox ziemlich wenn man die Scrollbar benutzt
+- Noch keine Idee wie Gruppierung funktionieren könnte da WindowScroller row-basiert ist
+- Zur Zeit nur sehr simple Zelleninhalte
+- ...was fehlt noch?
+
+
+#### Notes
+
+benutzt WindowScroller von react-virtualized
+https://bvaughn.github.io/react-virtualized/#/components/WindowScroller
+
+benutzt ScrollSync von react-scroll-sync
+https://github.com/okonet/react-scroll-sync
+
+(ScrollSync von react-virtualized funktioniert nicht so einfach mit eigenen Elementen)
+
+Sticky Footer und Header sind position:sticky - also nicht für IE
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
