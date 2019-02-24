@@ -30,9 +30,12 @@
 }
 
 .t-middle-wrapper {
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
+.t-body .t-middle-wrapper {
+  scrollbar-width: none
+}
 
 .t-row {
   border-bottom: 1px solid #ccc;
