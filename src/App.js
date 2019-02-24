@@ -31,6 +31,10 @@ const headerItem = {
 const LeftRows = ({index, isScrolling, isVisible, header, key, style}) => {
   const row = header ? headerItem : list[index];
 
+  // if (isScrolling) {
+  //   return <div key={key} className="t-row" style={style}>...</div>;
+  // }
+
   return (
     <div key={key} className="t-row" style={style}>
       <div className="t-cell" style={{ width: '50%'}}>
@@ -45,6 +49,10 @@ const LeftRows = ({index, isScrolling, isVisible, header, key, style}) => {
 
 const MiddleRows = ({index, isScrolling, isVisible, header, key, style}) => {
   const row = header ? headerItem : list[index];
+
+  if (isScrolling) {
+    return <div key={key} className="t-row" style={style}>...</div>;
+  }
 
   return (
     <div key={key} className="t-row" style={style}>
@@ -69,6 +77,10 @@ const MiddleRows = ({index, isScrolling, isVisible, header, key, style}) => {
 
 const RightRows = ({index, isScrolling, isVisible, header, key, style}) => {
   const row = header ? headerItem : list[index];
+
+  if (isScrolling) {
+    return <div key={key} className="t-row" style={style}>...</div>;
+  }
 
   return (
     <div key={key} className="t-row" style={style}>
@@ -116,7 +128,7 @@ class App extends Component {
 
             <WindowScroller>
               {({ height, isScrolling, onChildScroll, scrollTop }) => (
-                <div className="t-wrapper">
+                <div className="t-wrapper t-body">
                   <List
                     autoHeight
                     className="t-left-cols"
